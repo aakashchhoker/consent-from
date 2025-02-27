@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+  </head>
+  <body class="bg-gradient-to-br from-indigo-50 bg-indigo-100 min-h-screen">
+    <div class="container mx-auto max-w-2xl sm:px-0 sm:py-0 lg:px-4 lg:py-8">
+      <form
+        id="consentForm"
+        class="bg-white rounded-xl shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-xl"
+      >
+        <div class="text-center mb-4">
+          <!-- <h1
+            class="text-md lg:text-2xl md:text-2xl font-bold text-indigo-600 mb-2"
+          >
+            GNX Mind Care
+          </h1> -->
+          <h2 class="text-xl font-semibold text-gray-800">
+            Research Consent Form
+          </h2>
+        </div>
+
+        <!-- Consent Form Content -->
+        <div class="space-y-6 mb-8">
+          <div class="prose max-w-none">
+            <p class="text-gray-700 mb-4">
+              You are invited to participate in a workshop on couple therapy as
+              part of a Ph.D. research project. The workshop aims to enhance
+              relationship skills. Your participation is voluntary.
+            </p>
+
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-2">
+                Confidentiality
+              </h3>
+              <p class="text-gray-700">
+                All information collected will be kept confidential and used
+                only for research purposes.
+              </p>
+            </div>
+
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-2">
+                Data Collection
+              </h3>
+              <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                <li>Pre-Test: Brief questionnaire before the workshop</li>
+                <li>Workshop Participation: Attend therapy sessions</li>
+                <li>
+                  Post-Test: Follow-up questionnaire one month after workshop
+                </li>
+              </ol>
+            </div>
+
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-2">
+                Your Rights
+              </h3>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Voluntary participation without penalty</li>
+                <li>Right to withdraw at any time</li>
+                <li>Confidential handling of your data</li>
+              </ul>
+            </div>
+
+            <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+              <h3 class="text-lg font-semibold text-indigo-600 mb-2">
+                Contact Information
+              </h3>
+              <ul class="space-y-1 text-gray-700">
+                <li><strong>Researcher:</strong> Tanishka Pathak</li>
+                <li><strong>Email:</strong> tanishka@gnxgroup.org</li>
+                <li><strong>Phone:</strong> 8802949199</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Consent Agreement -->
+          <div class="mt-8 space-y-4">
+            <div class="flex items-start">
+              <input
+                type="checkbox"
+                id="consentParticipation"
+                required
+                class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+              />
+              <label
+                for="consentParticipation"
+                class="ml-2 text-sm text-gray-700"
+              >
+                I consent to participate in this workshop and the
+                pre/post-tests. I understand that I may withdraw at any time
+                without penalty.
+              </label>
+            </div>
+
+            <div class="flex items-start">
+              <input
+                type="checkbox"
+                id="consentConfidentiality"
+                required
+                class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+              />
+              <label
+                for="consentConfidentiality"
+                class="ml-2 text-sm text-gray-700"
+              >
+                I understand that my information will be kept confidential and
+                used solely for research purposes.
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold transition duration-300 hover:bg-indigo-700"
+        >
+          Proceed
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
